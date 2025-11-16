@@ -1,0 +1,89 @@
+@import url("https://fonts.cdnfonts.com/css/mountella-trial");
+body {
+  background-color: black;
+  color: aqua;
+  font-family: "Mountella Trial", sans-serif;
+}
+#hd:hover {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 10%,
+    rgba(252, 176, 69, 1) 20%
+  );
+  background-clip: text;
+  color: transparent;
+}
+form {
+  width: 50%;
+}
+fieldset {
+  border: 3px solid green;
+  border-radius: 50px;
+}
+input:required {
+  border: 2px solid yellow;
+}
+input:optional {
+  border: 3px solid red;
+}
+input:read-only {
+  background-color: pink;
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 30px;
+}
+input[type="radio"]:checked + label {
+  color: green;
+}
+input[type="submit"] {
+  border: 3px solid white;
+  border-radius: 20px;
+  float: right;
+}
+input[type="reset"] {
+  border: 3px solid white;
+  border-radius: 20px;
+  float: right;
+}
+select {
+  background-color: orange;
+  border-radius: 15px;
+  cursor: pointer;
+}
+input:focus {
+  background-color: aqua;
+}
+span {
+  display: none;
+}
+input[type="text"]:hover + span {
+  display: inline;
+}
+input[type="tel"]:hover + span {
+  display: inline;
+}
+input[type="email"]:hover + span {
+  display: inline;
+}
+input[type="password"]:hover + span {
+  display: inline;
+}
+input[type="date"]:hover + span {
+  display: inline;
+}
+img {
+  display: none;
+}
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
