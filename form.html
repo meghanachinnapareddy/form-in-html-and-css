@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="hd">Course registration form</h1>
+    <form action="indext.html" autocomplete="" target="_blank">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="">First Name</label></td>
+            <td>
+              <input type="text" placeholder="Ex: Meghana" name="first name" />
+              <span>Enter your first name</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Last Name</label></td>
+            <td>
+              <input type="text" placeholder="EX: Reddy" name="last name" />
+              <span>Enter your last name</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile number</label></td>
+            <td>
+              <input
+                type="tel"
+                minlength="10"
+                placeholder="7654321980"
+                required
+                name="mobile number"
+              />
+              <span>Enter your mobile number</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td>
+              <input
+                type="email"
+                placeholder="mera@gmail.com"
+                required
+                name="email"
+              />
+              <span>Enter your email</span>
+              <img id="valid" src="tick.png" alt="" />
+              <img id="invalid" src="crossmark.jpg" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password</label></td>
+            <td>
+              <input
+                type="password"
+                minlength="8"
+                name="password"
+                pattern="[A-Za-z0-9]+"
+              />
+              <span>Enter your password</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                minlength="8"
+                required
+                name="confirm password"
+                pattern="[A-Za-z0-9]+"
+              />
+              <span>Enter your confirm password</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">DOB</label></td>
+            <td>
+              <input type="date" required name="dob" />
+              <span>Enter your DOB</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <input type="radio" name="dr" value="m" /><label for="m"
+                >Male</label
+              >
+              <input type="radio" name="dr" value="f" /><label for="m"
+                >Female</label
+              >
+              <input type="radio" name="dr" value="c" /><label for="m"
+                >Custom</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select Country</label></td>
+            <td>
+              <select name="country" id="">
+                <option value="IND">India</option>
+                <option value="USA">USA</option>
+                <option value="GER">Germeny</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Choose file</label></td>
+            <td><input type="file" name="file" /></td>
+          </tr>
+          <td colspan="2"><input type="reset" /></td>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course details</legend>
+        <table>
+          <tr>
+            <td><label for="">Select Course</label></td>
+            <td>
+              <select name="" id="">
+                <option value="">Fullstack java</option>
+                <option value="">Fullstack python</option>
+                <option value="">Front end development</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Delivery Mode</label></td>
+            <td>
+              <input type="radio" name="dm" id="" />Online
+              <input type="radio" name="dm" id="" />Offline
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Comment</label></td>
+            <td><textarea rows="5" cols="45"></textarea></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <input type="submit" />
+    </form>
+    <button>
+      <a
+        href="c:\Users\LENOVO\OneDrive\Documents\Resumes\MEGHANA C.pdf"
+        download=""
+        >click here</a
+      >
+    </button>
+  </body>
+</html>
